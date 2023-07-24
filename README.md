@@ -1,0 +1,2 @@
+# BluebirdReplacer
+ Chrome版Twitterのロゴを従来の青い鳥に置換します
