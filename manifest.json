@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "Blue Bird Replacer",
+    "description": "ブラウザ版のロゴを青い鳥に変更します。",
+    "version": "1.0",
+    "icons": {
+        "32": "32.png",
+        "48": "48.png",
+        "128": "128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://twitter.com/*"
+            ],
+            "js": [
+                "editor.js"
+            ],
+            "run_at": "document_end"
+        }
+    ],
+    "permissions": [
+        "storage"
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    }
+}
